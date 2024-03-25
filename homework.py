@@ -43,8 +43,6 @@ print(f"Positive words: {positive} Negative words: {negative}")
         
         
 # 3
-
-count = 0
 def review_summary(review):
     for sentence in review:
         if len(sentence) <= 30:
