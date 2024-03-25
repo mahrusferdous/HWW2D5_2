@@ -47,7 +47,11 @@ print(f"Positive words: {positive} Negative words: {negative}")
 count = 0
 def review_summary(review):
     for sentence in review:
-        print(sentence[:30] + "...")
+        if len(sentence) <= 30:
+            print(sentence) 
+        else:
+            last_space = sentence[:30].rfind(" ")
+            print(sentence[:last_space] + "...")
         
 review_summary(reviews)
         
